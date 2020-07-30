@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: rgb(182, 169, 169);
+}
+/* wrapper */
+#wrapper {
+  width: 80%;
+  margin: auto;
+}
+/* content */
+
+/* Header */
+header {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin: auto;
+  position: relative;
+}
+header img {
+  width: 9%;
+  height: 9%;
+  float: left;
+  border: darkblue solid 0.3rem;
+}
+
+header .title {
+  background-color: darkblue;
+  margin: auto;
+  width: 100%;
+}
+
+header .title i {
+  padding-left: 6px;
+  font-size: 6.4rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: darkorange;
+}
+
+/* nav */
+nav {
+  background-color: darkblue;
+  clear: both;
+}
+nav a {
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0px;
+  padding-left: 0px;
+}
+
+nav ul li {
+  color: darkorange;
+  background: darkblue;
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+  text-decoration: none;
+}
+
+nav ul li a {
+  color: darkorange;
+}
+
+nav ul li:hover {
+  background: blue;
+  cursor: pointer;
+}
+
+nav ul li ul {
+  background: violet;
+  visibility: hidden;
+  position: absolute;
+  list-style: none;
+  margin-top: 0.5rem;
+  left: 0;
+  display: none;
+}
+
+nav ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  display: block;
+}
+
+nav ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+/* section */
+section {
+  padding: 1%;
+}
+
+section .judul h2 {
+  text-align: center;
+  padding-bottom: 20px;
+  text-decoration: underline;
+  font-size: 3rem;
+}
+
+section .judul img {
+  width: 30%;
+  height: 20%;
+  margin-left: 35%;
+}
+
+section h1 {
+  padding: 0.5%;
+  border-bottom: darkblue solid 6px;
+  color: black;
+}
+
+section .paragraph {
+  padding: 1%;
+  margin-top: 2%;
+  border: darkblue solid 3px;
+  background-color: darkorange;
+}
+section .paragraph p {
+  font-size: 1.2rem;
+  padding: 1%;
+}
+
+section .paragraph p b {
+  color: darkblue;
+}
+
+section .bagian1 {
+  padding: 1%;
+  margin-top: 2%;
+  width: 80%;
+  border: darkblue solid 3px;
+  background-color: rgb(59, 202, 59);
+}
+section .bagian1 p {
+  font-size: 1.2rem;
+  padding: 1%;
+}
+
+section .tabel {
+  padding: 1%;
+  margin-top: 2%;
+  height: fit-content;
+  width: fit-content;
+  border: darkblue dashed 5px;
+  background-color: rgb(23, 219, 144);
+}
+section .tabel p {
+  font-size: 1.2rem;
+  padding: 1%;
+}
+
+/* footer */
+footer {
+  margin-top: 5%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+  text-align: center;
+  background-color: rgb(23, 23, 70);
+  width: 100%;
+  height: 30%;
+}
+#komen {
+  padding-top: 1%;
+}
+
+/* for mobile */
+@media only screen and (max-width: 800px) {
+  header .title {
+    background-color: darkblue;
+    margin: auto;
+    width: 100%;
+  }
+
+  header .title i {
+    padding-left: 6px;
+    font-size: 3.5rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    color: darkorange;
+  }
+}
